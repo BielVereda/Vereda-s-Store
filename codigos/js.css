@@ -1,0 +1,116 @@
+body { 
+    background: rgb(255,139,2);
+    background: linear-gradient(90deg, rgba(255,139,2,1) 0%, rgba(254,177,1,1) 50%, rgba(248,255,0,1) 100%);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.seta {
+    position: fixed; 
+    top: 20px;        
+    left: 20px;       
+    z-index: 100;     
+}
+
+.seta img {
+    width: 50px;    
+    height: auto;    
+}
+
+.titulo {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    margin: 1em auto;
+}
+
+.imagem_centro {
+    display: block;
+    margin: 1em auto;
+    max-width: 60%; 
+    height: auto;   
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+.pergunta {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 2em auto;
+    background-color: white;
+    padding: 0.8em;
+    border-radius: 10px;
+    max-width: 80%;
+    box-sizing: border-box;
+}
+
+.explicacao {
+    font-size: 1.3em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 1em auto;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+.botao {
+    display: block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 2em auto;
+    max-width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #37ff05;
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2em;
+    }
+
+    .imagem_centro {
+        max-width: 70%;
+    }
+
+    .pergunta, .explicacao {
+        font-size: 1.2em;
+        padding: 0.8em;
+    }
+
+    .botao {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.8em;
+    }
+
+    .imagem_centro {
+        max-width: 90%;
+    }
+
+    .pergunta, .explicacao {
+        font-size: 1.1em;
+        padding: 0.6em;
+    }
+
+    .botao {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}

@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(0, 10, 119);
+    background: linear-gradient(180deg, rgba(0, 10, 119, 1) 0%, rgba(11, 104, 172, 1) 50%, rgba(0, 255, 252, 1) 100%);
+    align-items: center;
+}
+
+header {
+    background-color: background: rgb(2,117,255);
+    background: linear-gradient(90deg, rgba(2,117,255,1) 0%, rgba(1,254,238,1) 50%, rgba(0,255,162,1) 100%);;
+    color: black;
+    padding: 2px;
+    text-align: center;
+    padding-bottom: 2.5em;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    background-color: rgb(0, 102, 255);
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: white;
+    color:black;
+}
+
+h2 {
+    color: white;
+    background-color: background: rgb(8,2,94);
+    background: linear-gradient(90deg, rgba(8,2,94,1) 0%, rgba(28,1,254,1) 50%, rgba(0,189,254,1) 100%);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+p {
+    background-color: white;
+    padding: 1em;
+    margin: 0;
+    margin-top: 0;
+}
+
+footer {
+    background-color: transparent;
+    margin-top: 2em;
+    text-align: center;
+}
+
+/* Layout com os elementos um embaixo do outro */
+section {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna (imagem abaixo do texto) */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.nome, .dados {
+    flex: 1;
+    min-width: 300px; /* Garante que os textos não fiquem estreitos */
+    padding: 10px;
+}
+
+/* Imagem */
+img {
+    width: 30em;
+    height: 30em;
+    margin-top: 1em; /* Distância da imagem do texto */
+    background-color: background: rgb(8,2,94);
+    background: linear-gradient(90deg, rgba(8,2,94,1) 0%, rgba(28,1,254,1) 50%, rgba(0,189,254,1) 100%);
+    padding: 1em;
+}
+
+.links{
+    text-decoration: none;
+    background-color: transparent;
+    font-size: larger;
+    padding: 10px;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    img {
+        max-width: 100%; /* A imagem ocupa toda a largura disponível */
+        height: auto; /* Ajuste automático da altura */
+    }
+
+    .nome, .dados {
+        padding: 10px;
+    }
+
+    .nome h2, .dados p {
+        font-size: 16px; /* Ajuste do tamanho da fonte em dispositivos pequenos */
+    }
+}
+
+/* Responsividade para telas menores que 480px */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .nome h2 {
+        font-size: 18px;
+    }
+
+    .dados p {
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+footer {
+    text-align: center;
+}

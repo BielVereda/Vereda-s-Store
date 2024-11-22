@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Inscrição no Curso</title>
+  <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+
+  <div class="seta">
+    <a href="index.html">
+      <img src="seta.jpg" alt="Voltar">
+    </a>
+  </div>
+
+  <section class="formulario">
+    <h1>Inscrição no Curso</h1>
+
+    <!-- Alerta de erro (mensagem simples) -->
+    <div id="errorAlert" style="display: none; color: red; font-size: 1.2rem; margin-top: 20px;">
+      <strong>Erro!</strong> Todos os campos obrigatórios devem ser preenchidos.
+    </div>
+
+    <form id="contactForm">
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+
+        <div class="campoNome">
+          <div class="primeiroNome">
+            <label for="firstName">Primeiro Nome:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <small>* Campo Obrigatório</small>
+          </div>
+
+          <div class="segundoNome">
+            <label for="lastName">Último Nome:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <small>* Campo Obrigatório</small>
+          </div>
+        </div>
+
+        <div class="campoEmail">
+          <label for="email">Endereço de E-mail:</label>
+          <input type="email" id="email" name="email" required>
+          <small>* Campo Obrigatório</small>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Termos e Condições</legend>
+        <div class="termos">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">Eu concordo com os termos de uso.</label>
+        </div>
+      </fieldset>
+
+      <button type="submit" id="submitBtn">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Gabriel Vereda. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="formulario.js"></script>
+
+</body>
+
+</html>

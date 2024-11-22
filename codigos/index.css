@@ -1,0 +1,222 @@
+body {
+    background-color: rgb(0, 10, 119);
+    background: linear-gradient(180deg, rgba(0, 10, 119, 1) 0%, rgba(11, 104, 172, 1) 50%, rgba(0, 255, 252, 1) 100%);
+}
+
+header {
+    background-color: background: rgb(2,117,255);
+    background: linear-gradient(90deg, rgba(2,117,255,1) 0%, rgba(1,254,238,1) 50%, rgba(0,255,162,1) 100%);;
+    color: black;
+    padding: 2px;
+    text-align: center;
+    padding-bottom: 2.5em;
+    margin: 0;
+    align-items: center;
+}
+
+.container-pesquisa {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 3em;
+    margin-bottom: 4em;
+}
+
+.icone-pesquisa {
+    position: absolute;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+}
+
+.entrada-pesquisa {
+    width: 250px;
+    padding: 8px 8px 8px 35px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.container-resultados {
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+}
+
+.item-conteudo {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.item-conteudo:last-child {
+    border-bottom: none;
+}
+
+.item-conteudo a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.item-conteudo a:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 10, 119);
+    background: linear-gradient(90deg, rgba(0, 10, 119, 1) 0%, rgba(11, 104, 172, 1) 50%, rgba(0, 255, 252, 1) 100%);
+    padding: 1px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.mensagem {
+    background-color: white;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 10px;
+}
+
+.titulo {
+    text-align: center;
+    margin: 10px;
+    margin-top: 50px;
+    color: white;
+    background-color: rgb(0, 10, 119);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+.carrossel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a{
+    background-color: rgb(0, 102, 255);
+    color: white;
+    text-align: center;
+    margin: 3em;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    background-color: white;
+    color:black;
+}
+
+img:hover {
+    opacity: 1;
+    border: 2px solid white;
+}
+
+.tema {
+    text-align: center;
+    margin-top: 4em;
+    color: white;
+    background-color: rgb(0, 10, 119);
+    margin-left: 15em;
+    margin-right: 15em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .carrossel {
+        display: block;
+        overflow: hidden;
+    }
+
+    .titulo {
+        font-size: 16px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .tema {
+        margin-left: 5em;
+        margin-right: 5em;
+        padding: 10px;
+    }
+
+    .mensagem {
+        padding: 0.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h1 {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .tema h1 {
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .carrossel {
+        display: block;
+        text-align: center;
+    }
+
+    .titulo {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .aviso {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .mensagem h3 {
+        font-size: 14px;
+    }
+}
+
+footer{
+    text-align: center;
+    margin-top: 1em;
+}
