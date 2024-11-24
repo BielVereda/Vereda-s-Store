@@ -4,8 +4,8 @@ body {
 }
 
 header {
-    background-color: background: rgb(2,117,255);
-    background: linear-gradient(90deg, rgba(2,117,255,1) 0%, rgba(1,254,238,1) 50%, rgba(0,255,162,1) 100%);;
+    background-color: rgb(2,117,255);
+    background: linear-gradient(90deg, rgba(2,117,255,1) 0%, rgba(1,254,238,1) 50%, rgba(0,255,162,1) 100%);
     color: black;
     padding: 2px;
     text-align: center;
@@ -20,7 +20,6 @@ header {
     align-items: center;
     margin-left: 3em;
     margin-bottom: 4em;
-    
 }
 
 .icone-pesquisa {
@@ -38,7 +37,6 @@ header {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 
 .container-resultados {
     position: absolute;
@@ -115,7 +113,7 @@ img {
     align-items: center;
 }
 
-nav a{
+nav a {
     background-color: rgb(0, 102, 255);
     color: white;
     text-align: center;
@@ -124,10 +122,10 @@ nav a{
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     text-decoration: underline;
     background-color: white;
-    color:black;
+    color: black;
 }
 
 img:hover {
@@ -176,6 +174,12 @@ img:hover {
     .mensagem {
         padding: 0.5em;
     }
+
+    .container-pesquisa {
+        margin: 0 auto; /* Centraliza horizontalmente */
+        justify-content: center; /* Centraliza o conteúdo */
+        margin-bottom: 2em; /* Ajusta o espaçamento */
+    }
 }
 
 @media (max-width: 480px) {
@@ -197,8 +201,19 @@ img:hover {
         text-align: center;
     }
 
-    .container-pesquisa{
-        margin-left: 3em;
+    .container-pesquisa {
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .entrada-pesquisa {
+        width: 90%; /* Ajusta largura para dispositivos menores */
+        margin-bottom: 1em; /* Espaço entre a entrada e outros elementos */
+    }
+
+    .icone-pesquisa {
+        left: 5%; /* Ajusta posição do ícone */
     }
 
     .titulo {
@@ -221,7 +236,7 @@ img:hover {
     }
 }
 
-footer{
+footer {
     text-align: center;
     margin-top: 1em;
 }
