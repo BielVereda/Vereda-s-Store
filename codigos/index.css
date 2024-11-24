@@ -145,7 +145,6 @@ img:hover {
     border-radius: 10px;
 }
 
-/* Estilização para telas menores */
 @media (max-width: 768px) {
     .intro {
         margin-left: 20px;
@@ -178,11 +177,7 @@ img:hover {
 
     .container-pesquisa {
         margin: 0 auto; /* Centraliza horizontalmente */
-        margin-top: 1.5em; /* Adiciona espaçamento superior */
-        margin-bottom: 2em; /* Ajusta espaçamento inferior */
-        justify-content: center; /* Garante centralização interna */
-        width: 100%; /* Corrige problemas de largura */
-        max-width: 90%; /* Limita a largura para evitar ultrapassar a tela */
+        margin-bottom: 2em; /* Adiciona espaçamento inferior */
     }
 }
 
@@ -207,11 +202,8 @@ img:hover {
 
     .container-pesquisa {
         margin: 0 auto; /* Centraliza horizontalmente */
-        margin-top: 1.5em; /* Espaçamento superior */
-        margin-bottom: 2em; /* Espaçamento inferior */
-        justify-content: center; /* Garante centralização interna */
-        width: 100%; /* Ajuste adicional para telas pequenas */
-        max-width: 90%; /* Mantém a largura responsiva */
+        margin-top: 1.5em; /* Adiciona espaçamento superior */
+        margin-bottom: 2em; /* Ajusta espaçamento inferior */
     }
 
     .titulo {
