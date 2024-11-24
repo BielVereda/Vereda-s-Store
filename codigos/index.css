@@ -197,6 +197,10 @@ img:hover {
         text-align: center;
     }
 
+    .container-pesquisa{
+        margin-left: 3em;
+    }
+
     .titulo {
         margin-top: 30px;
         font-size: 14px;
