@@ -177,7 +177,9 @@ img:hover {
 
     .container-pesquisa {
         margin: 0 auto; /* Centraliza horizontalmente */
-        margin-bottom: 2em; /* Adiciona espaçamento inferior */
+        margin-bottom: 1em; /* Adiciona espaçamento inferior */
+        margin-top: 2em;
+        align-items: center;
     }
 }
 
