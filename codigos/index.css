@@ -18,8 +18,10 @@ header {
     position: relative;
     display: flex;
     align-items: center;
-    margin-left: 3em;
-    margin-bottom: 4em;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-bottom: 4em; /* Mantém o espaçamento inferior */
+    margin-top: 1.5em; /* Espaçamento em relação ao botão ou elemento acima */
+    justify-content: center; /* Garante o alinhamento central */
 }
 
 .icone-pesquisa {
@@ -176,9 +178,9 @@ img:hover {
     }
 
     .container-pesquisa {
-        margin: 0 auto; /* Centraliza horizontalmente */
-        justify-content: center; /* Centraliza o conteúdo */
-        margin-bottom: 2em; /* Ajusta o espaçamento */
+        margin-top: 1.5em; /* Espaçamento superior ajustado */
+        margin-bottom: 2em; /* Ajusta o espaçamento inferior */
+        justify-content: center; /* Garante o alinhamento central */
     }
 }
 
@@ -202,18 +204,9 @@ img:hover {
     }
 
     .container-pesquisa {
-        margin: 0 auto;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .entrada-pesquisa {
-        width: 90%; /* Ajusta largura para dispositivos menores */
-        margin-bottom: 1em; /* Espaço entre a entrada e outros elementos */
-    }
-
-    .icone-pesquisa {
-        left: 5%; /* Ajusta posição do ícone */
+        margin-top: 1.5em; /* Ajusta o espaçamento superior */
+        margin-bottom: 2em; /* Ajusta o espaçamento inferior */
+        justify-content: center; /* Centraliza o conteúdo */
     }
 
     .titulo {
