@@ -1,20 +1,14 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
 body {
     background: rgb(134, 255, 0);
     background: linear-gradient(90deg, rgba(134, 255, 0, 1) 0%, rgba(4, 129, 5, 1) 50%, rgba(6, 43, 1, 1) 100%);
     margin: 0;
     font-family: Arial, sans-serif;
-}
-
-.seta {
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    z-index: 100;
-}
-
-.seta img {
-    width: 70px;
-    height: auto;
 }
 
 .titulo {
