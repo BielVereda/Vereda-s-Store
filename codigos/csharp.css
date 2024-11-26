@@ -1,3 +1,9 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
 body {
     background: rgb(255,2,234);
 background: linear-gradient(90deg, rgba(255,2,234,1) 0%, rgba(205,1,254,1) 50%, rgba(106,0,255,1) 100%);
