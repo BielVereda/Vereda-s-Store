@@ -1,15 +1,3 @@
-.seta {
-    position: fixed; 
-    top: 30px;        
-    left: 30px;       
-    z-index: 100;     
-}
-
-.seta img {
-    width: 70px;    
-    height: auto;    
-}
-
 body {
     background: rgb(8,2,94);
 background: linear-gradient(90deg, rgba(8,2,94,1) 0%, rgba(28,1,254,1) 50%, rgba(0,189,254,1) 100%);
