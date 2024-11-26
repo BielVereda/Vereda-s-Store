@@ -1,5 +1,7 @@
 *{
     padding:0;
+    margin:0;
+    box-sizing: border-box;
 }
 
 body {
@@ -7,18 +9,6 @@ body {
     background: linear-gradient(90deg, rgba(3, 94, 26, 1) 0%, rgba(235, 66, 66, 1) 50%, rgba(255, 209, 0, 1) 100%);
     margin: 0;
     font-family: Arial, sans-serif;
-}
-
-.seta {
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    z-index: 100;
-}
-
-.seta img {
-    width: 70px;
-    height: auto;
 }
 
 .titulo {
